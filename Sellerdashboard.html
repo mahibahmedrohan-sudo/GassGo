@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard - LPG Gas Management</title>
+</head>
+
+<body>
+
+    <h1>LPG Gas Management System</h1>
+    <h2>Seller Dashboard</h2>
+
+    <nav>
+        <a href="SellerRegistration.html">Seller Registration</a> |
+        <a href="Sellerdashboard.html">Seller Dashboard</a>
+    </nav>
+
+    <hr>
+
+    <h3>Welcome to Seller Dashboard</h3>
+
+    <p>
+        Manage LPG cylinder stock, prices,
+        customer orders and delivery status.
+    </p>
+
+    <h3>Manage Cylinder Stock and Price</h3>
+
+    <form action="/action_page.php" method="post">
+
+        <fieldset>
+            <legend>Cylinder Information</legend>
+
+            <p>
+                <label for="brand">LPG Brand:</label>
+                <input type="text"
+                       id="brand"
+                       name="brand"
+                       placeholder="Enter LPG brand"
+                       required>
+            </p>
+
+            <p>
+                <label for="size">Cylinder Size:</label>
+                <select id="size" name="size" required>
+                    <option value="">Select Size</option>
+                    <option value="12kg">12 KG</option>
+                    <option value="15kg">15 KG</option>
+                    <option value="35kg">35 KG</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="stock">Available Stock:</label>
+                <input type="number"
+                       id="stock"
+                       name="stock"
+                       min="0"
+                       placeholder="Enter stock quantity"
+                       required>
+            </p>
+
+            <p>
+                <label for="price">Cylinder Price (BDT):</label>
+                <input type="number"
+                       id="price"
+                       name="price"
+                       min="0"
+                       step="0.01"
+                       placeholder="Enter price"
+                       required>
+            </p>
+
+            <input type="submit" value="Add / Update Stock">
+            <input type="reset" value="Clear Form">
+
+        </fieldset>
+
+    </form>
+
+    <hr>
+
+    <h3>Available Cylinder Stock</h3>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>LPG Brand</th>
+            <th>Cylinder Size</th>
+            <th>Stock Quantity</th>
+            <th>Price (BDT)</th>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                No stock records available.
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Review Customer Orders</h3>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Order ID</th>
+            <th>Customer Name</th>
+            <th>LPG Brand</th>
+            <th>Quantity</th>
+            <th>Order Status</th>
+        </tr>
+
+        <tr>
+            <td colspan="5">
+                No customer orders available.
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Check Delivery Status</h3>
+
+    <form action="/action_page.php" method="post">
+
+        <fieldset>
+            <legend>Delivery Information</legend>
+
+            <p>
+                <label for="orderid">Order ID:</label>
+                <input type="text"
+                       id="orderid"
+                       name="orderid"
+                       placeholder="Enter order ID"
+                       required>
+            </p>
+
+            <p>
+                <label for="status">Delivery Status:</label>
+
+                <select id="status" name="status" required>
+                    <option value="">Select Status</option>
+                    <option value="pending">Pending</option>
+                    <option value="received">Received</option>
+                    <option value="cancelled">Cancelled</option>
+                </select>
+            </p>
+
+            <input type="submit" value="Update Status">
+            <input type="reset" value="Clear">
+
+        </fieldset>
+
+    </form>
+
+    <hr>
+
+    <p>
+        <a href="register.html">
+            Back to Seller Registration
+        </a>
+    </p>
+
+</body>
+</html>
