@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GasGo - Admin Registration</title>
+</head>
+<body>
+
+    <h1>GasGo</h1>
+
+    <h2>Admin Registration</h2>
+
+    <p>Create an administrator account for GasGo.</p>
+
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname"
+               name="fullname" required>
+        <br><br>
+
+        <label for="adminid">Admin ID:</label>
+        <input type="text" id="adminid"
+               name="adminid" required>
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email"
+               name="email" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone"
+               name="phone" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password"
+               name="password" required>
+        <br><br>
+
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm"
+               name="confirm" required>
+        <br><br>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="management">Management</option>
+            <option value="operations">Operations</option>
+            <option value="support">Customer Support</option>
+        </select>
+        <br><br>
+
+        <label for="code">Admin Authorization Code:</label>
+        <input type="password" id="code"
+               name="code" required>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <br>
+
+    <a href="../commonui/register.html">
+        Back to Registration Options
+    </a>
+
+    <br><br>
+
+    <a href="../commonui/login.html">
+        Back to Login
+    </a>
+
+</body>
+</html>
