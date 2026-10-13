@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery Agent Registration</title>
+</head>
+<body>
+
+    <h1>GasGo!</h1>
+    <p>LPG Cylinder Management and Delivery System</p>
+
+    <h2>Delivery Agent Registration</h2>
+
+    <nav>
+        <a href="registration.html">Delivery Agent Registration</a> |
+        <a href="Dashboard.html">Delivery Agent Dashboard</a>
+    </nav>
+
+    <hr>
+
+    <h3>Delivery Agent Registration Form</h3>
+    <p>Fill in your details to register as a delivery agent.</p>
+
+    <form action="/action_page.php" method="post">
+
+        <fieldset>
+            <legend>Delivery Agent Information</legend>
+
+            <p>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </p>
+
+            <p>
+                <label for="nid">NID Number:</label>
+                <input type="text" id="nid" name="nid" required>
+            </p>
+
+            <p>Vehicle Type:</p>
+
+            <input type="radio" id="bike" name="vehicle" value="Bike" required>
+            <label for="bike">Bike</label>
+
+            <input type="radio" id="cycle" name="vehicle" value="Cycle">
+            <label for="cycle">Cycle</label>
+
+            <p>
+                <label for="license">License Number:</label>
+                <input type="text" id="license" name="license">
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Confirm Registration">
+
+        
+
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+</body>
+</html>
