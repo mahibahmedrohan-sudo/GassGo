@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>GasGo - Place Demo Order</title></head>
+<body>
+    <h1>GasGo</h1><h2>Place a Demo Order</h2>
+    <p>Enter delivery details and select a payment method.</p>
+    <form action="order-success.html" method="get">
+        <fieldset>
+            <legend>Delivery Details</legend>
+            <p><label for="name">Full Name:</label>
+                <br>
+                <input type="text" id="name" name="name" required></p>
+                       <p><label for="phone">Phone Number:</label>
+                <br>
+                <input type="tel" id="phone" name="phone" required></p>
+            <p><label for="address">Delivery Address:</label>
+                <br>
+                <textarea id="address" name="address" rows="4" cols="35" required></textarea></p>
+            <p><label for="cylinder">Cylinder Size:</label><br>
+            <select id="cylinder" name="cylinder" required>
+                <option value="">Select Size</option><option value="12kg">12 KG - Tk. 1350</option><option value="15kg">15 KG - Tk. 1650</option><option value="22kg">22 KG - Tk. 2350</option>
+            </select></p>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Method</legend>
+            <p><input type="radio" id="cod" name="payment" value="cod" required><label for="cod">Cash on Delivery</label></p>
+            <p><input type="radio" id="mobile" name="payment" value="mobile"><label for="mobile">Mobile Banking</label></p>
+            <p><input type="radio" id="online" name="payment" value="online"><label for="online">Online Banking</label></p>
+        </fieldset>
+        <p><input type="submit" value="Place Demo Order"> <input type="reset" value="Clear Form"></p>
+    </form>
+    <p><a href="dashboard.html">Back to Customer Dashboard</a> | <a href="../index.html">Home</a></p>
+</body>
+</html>
