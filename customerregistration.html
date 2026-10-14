@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customer Registration - GasGo</title>
+</head>
+<body>
+<h1 align="center">GasGo</h1>
+<h2 align="center">Customer Registration</h2>
+<p align="center">
+       Register with GasGo to order LPG gas cylinders
+       at your doorstep.
+</p>
+<hr>
+<p align="center">
+<a href="../commonui/home.html">Home</a> |
+<a href="customer-dashboard.html">Customer Dashboard</a>
+</p>
+<hr>
+<form action="customer-dashboard.html" method="get">
+<fieldset>
+<legend>Personal Information</legend>
+<p>
+<label for="name">Full Name:</label><br>
+<input type="text" id="name" name="name"
+                      placeholder="Enter your full name" required>
+</p>
+<p>
+<label for="phone">Phone Number:</label><br>
+<input type="tel" id="phone" name="phone"
+                      placeholder="01XXXXXXXXX" required>
+</p>
+<p>
+<label for="email">Email Address:</label><br>
+<input type="email" id="email" name="email"
+                      placeholder="Enter your email" required>
+</p>
+<p>
+<label for="district">District:</label><br>
+<select id="district" name="district" required>
+<option value="">Select District</option>
+<option value="Dhaka">Dhaka</option>
+<option value="Gazipur">Gazipur</option>
+<option value="Narayanganj">Narayanganj</option>
+<option value="Chattogram">Chattogram</option>
+<option value="Cumilla">Cumilla</option>
+<option value="Other">Other</option>
+</select>
+</p>
+<p>
+<label for="area">Area:</label><br>
+<input type="text" id="area" name="area"
+                      placeholder="Enter your area" required>
+</p>
+<p>
+<label for="address">Present Address:</label><br>
+<textarea id="address" name="address"
+                         rows="4" cols="35"
+                         placeholder="Enter your full address"
+                         required></textarea>
+</p>
+</fieldset>
+<br>
+<fieldset>
+<legend>Account Information</legend>
+<p>
+<label for="password">Password:</label><br>
+<input type="password" id="password"
+                      name="password" required>
+</p>
+<p>
+<label for="confirm-password">
+                   Confirm Password:
+</label><br>
+<input type="password" id="confirm-password"
+                      name="confirm-password" required>
+</p>
+</fieldset>
+<br>
+<p align="center">
+<input type="submit" value="Register">
+<input type="reset" value="Clear Form">
+</p>
+</form>
+<hr>
+<p align="center">
+       Already registered?
+<a href="customer-dashboard.html">Go to Dashboard</a>
+</p>
+</body>
+</html>
